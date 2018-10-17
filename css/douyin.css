@@ -1,0 +1,189 @@
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing:border-box;
+}
+a{
+	text-decoration: none;		
+}
+body{
+	font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: -999;
+}
+.banner-video{
+	width: 100%;
+	height: 100%;
+}
+.video-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1903px;
+	height: 933px;
+	object-fit: cover;
+}
+
+
+.content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.head-section{
+	height: 120px;
+  overflow: hidden;
+  line-height: 120px;
+ /* display: flex;
+  justify-content:space-between;*/
+}
+.head-section .head-link{
+	margin-left: 80px;
+	margin-top: 32.5px;
+}
+.head-logo{
+	display: inline-block;
+}
+.head-links{
+	list-style: none;
+	float: right;
+	height:100%;
+	margin-right: 150px;
+}
+.head-links-item{
+	display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.head-links-item a{
+	font-size: 16px;
+	color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+.head-links-item .unmute:before{
+	content: '';
+	display: inline-block;
+	/*width: 23px;
+	height: 23px;*/
+	background-image: url(../img/unmute_cc0edda.png);
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-size: cover;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+	vertical-align: middle;
+}
+
+.middle-section{
+	position: fixed;
+	top:50%;
+  right: 150px;
+	width: 500px;
+	transform: translateY(-50%);
+  margin-top: 50px;
+  
+}
+.middle-section .slogan{
+	float: right;
+	display: inline-block;
+	width: 451px;
+	margin-bottom: 50px;
+
+}
+.middle-section .slogan img{
+	width: 100%;
+}
+.bth-list{
+	float: right;
+  letter-spacing: -4px;
+  font-size: 0;
+}
+.bth-list .bth-primary{
+	float: right;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  background-size: cover;
+  background-image: url(../img/download_476d015.png);
+  transition: .15s opacity;
+  transition-delay: .15s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 7px 2px rgba(0,0,0,.54);
+}
+.bth-list .bth-primary img{
+	display: none;
+}
+.bth-item{
+	display: inline-block;
+  background: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 130px;
+  height: 50px;
+  transition: .15s opacity;
+  transition-delay: .15s;
+  background-image: url(../img/appstore_0aecd08.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 7px 2px rgba(0,0,0,.54);
+}
+.bth-list .bth-item:nth-child(3){
+	background-image: url(../img/android_088aebd.png);
+}
+
+
+
+.foot-section{
+	font-size: 14px;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+}
+.nav-warpper{
+	color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+  margin-bottom: 16px;
+
+}
+.nav-warpper span{
+	margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.nav-warpper a{
+	color: #fff;
+	font-size: 14px;
+	border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.foot-info{
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+.foot-info p{
+	color: #fff;
+	font-size: 14px;
+}
+.foot-info a{
+	color: #fff;
+}
