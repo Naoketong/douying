@@ -6,7 +6,9 @@
 a{
 	text-decoration: none;		
 }
-body{
+html,body{
+	width: 100%;
+	height: 100%;
 	font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
 }
 .container{
@@ -15,16 +17,16 @@ body{
 	height: 100%;
 	z-index: -999;
 }
-.banner-video{
+/*.banner-video{
 	width: 100%;
 	height: 100%;
-}
+}*/
 .video-bg{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 1903px;
-	height: 933px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
@@ -67,8 +69,6 @@ body{
 .head-links-item .unmute:before{
 	content: '';
 	display: inline-block;
-	/*width: 23px;
-	height: 23px;*/
 	background-image: url(../img/unmute_cc0edda.png);
 	background-repeat: no-repeat; 
 	background-position: center;
@@ -124,6 +124,16 @@ body{
 .bth-list .bth-primary img{
 	display: none;
 }
+.bth-list .bth-primary:hover img{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	border-radius: 10px;
+	transform: scale(1);
+  opacity: 1;
+  transform: .2s 
+}
+
 .bth-item{
 	display: inline-block;
   background: #fff;
@@ -139,11 +149,10 @@ body{
   background-size: cover;
   box-shadow: 1px 1px 7px 2px rgba(0,0,0,.54);
 }
+
 .bth-list .bth-item:nth-child(3){
 	background-image: url(../img/android_088aebd.png);
 }
-
-
 
 .foot-section{
 	font-size: 14px;
